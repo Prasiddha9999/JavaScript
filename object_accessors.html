@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Creating java Script Objects</h1>
+    <p id = "demo"></p>
+    <!-- <script>
+        var car ={
+            model: "BMW",
+            color: "Red",
+            fuelt: "Disel",
+            get fuel(){
+                return this.fuelt
+            },
+        };
+        document.getElementById("demo").innerHTML = car.fuel + car.model + car.fuel
+    </script> -->
+
+    <script>
+        var car = {
+            model: "Aurdi",
+            color: "Black",
+            fuelt: "",
+            set fuel(fuel){
+                this.fuelt= fuel;
+            }
+        }
+        car.fuel = "Petrol";
+        document.getElementById("demo").innerHTML = car.fuel + car.model + car.fuel
+
+    </script>
+</body>
+</html>
