@@ -8,13 +8,21 @@
 <body>
     <h1>Java Script fucntion</h1>
     <p id = "demo"></p>
-    <script>
+    <!-- <script>
          function myfunction(val){
             total = val*val
             return total; 
         }
 res = myfunction(6)
         document.getElementById("demo").innerHTML = res;
+    </script> -->
+    <script>
+        let c = function myfunction(){
+            alert("Hello")
+        }
+        let b = c
+        document.getElementById("demo").innerHTML = b()
     </script>
+
 </body>
 </html>
