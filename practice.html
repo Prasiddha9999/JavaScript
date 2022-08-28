@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <script>
+  let a = ["one", "Two", "Three", "Four"]
+  document.getElementById("demo").innerHTML = a;
+
+  let b = a[2];
+  document.getElementById("demo").innerHTML = b;
+
+  let c= a.length;
+  document.getElementById("demo").innerHTML = c;
+
+  let d= a[a.length -1];
+  document.getElementById("demo").innerHTML = d;
+
+  a.forEach((item,index,array) => {console.log(item,index);});
+
+  document.getElementById("demo").innerHTML = a.toString();
+
+  let e= a.pop();
+  document.getElementById("demo").innerHTML = e;
+  let f= a[a.length-1];
+  console.log(f);
+
+  a.push("Five");
+  document.getElementById("demo").innerHTML = a;
+
+  a.shift();
+  document.getElementById("demo").innerHTML = a;
+
+  a.unshift("Ones");
+  document.getElementById("demo").innerHTML = a;
+
+  let aa= ["apple", "Ball" ,"Cat", "Dog"];
+  let bb= a.concat(aa);
+  document.getElementById("demo").innerHTML = bb;
+
+  bb.sort();
+  document.getElementById("demo").innerHTML = bb;
+
+  bb.reverse();
+  document.getElementById("demo").innerHTML = bb;
+
+  let cc= [1,2,3,4,5,6,7,8]
+let dd = cc.map(multiply);
+function multiply(value){
+ return value * 2;
+}
+document.getElementById("demo").innerHTML = dd;
+
+let ee = dd.filter(comp);
+function comp(value){
+    return value>6;
+}
+document.getElementById("demo").innerHTML = ee;
+
+let ff = cc.reduce(sum);
+function sum(total,value){
+    return total + value;
+
+}
+document.getElementById("demo").innerHTML = ff;
+
+    </script>
+</body>
+</html>

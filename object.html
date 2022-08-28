@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Creating Java Scrip Object</h3>
+    <h1><p id ="demo"></p></h1>
+<script>
+        var student = {
+            name: "prasiddha",
+            age: 21,
+            studies: "Computer Sciences",
+        };
+        a = "age";
+        document.getElementById("demo").innerHTML = student.name + " " + student[a] + " "+ student.studies;
+    </script>
+    <!-- <script>
+        var std = new Object();
+        std.name = "Prasiddha",
+        std.age = 22,
+        std.studies = "Computer Sciences";
+        document.getElementById("demo").innerHTML = std.name + " " + std.age + " "+ std.studies; 
+    </script>  -->
+    <!-- <script>
+        function stud(name, age, studies){
+            this.name = name;
+            this.age= age;
+            this.studies = studies;
+        }
+        var student = stud("Prasiddha", 21, "Social");
+  
+        document.getElementById("demo").innerHTML = student.name + " " + student.age + " "+ student.studies; -->
+    </script>
+   
+    
+</body>
+</html>
