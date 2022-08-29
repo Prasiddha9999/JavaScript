@@ -43,10 +43,16 @@ res = myfunction(6)
     let y = myfunction(2,6)
     document.getElementById("demo").innerHTML = y
 </script> -->
-<script>
+<!-- <script>
     var body = ("return Math.PI * rad * rad")
     var myfunction = new Function("rad", body)
     alert(myfunction(6))
+</script> -->
+<script>
+    const myfunc = (a,b,c) => {return a*b*c};
+    let product = myfunc(2,3,4)
+    document.getElementById("demo").innerHTML = product
+
 </script>
 </body>
 </html>
