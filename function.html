@@ -48,11 +48,34 @@ res = myfunction(6)
     var myfunction = new Function("rad", body)
     alert(myfunction(6))
 </script> -->
-<script>
+<!-- <script>
     const myfunc = (a,b,c) => {return a*b*c};
     let product = myfunc(2,3,4)
     document.getElementById("demo").innerHTML = product
 
+</script> -->
+<script>
+    function* myfunc(){
+        yield 1;
+        yield 2;
+        yield 3;
+        yield 5;
+        yield 6;
+        return 7;
+    }
+    let gen = myfunc(); 
+    let a  = gen.next();
+    let b  = gen.next();
+
+    let d  = gen.next();
+    let e  = gen.next();
+    let f  = gen.next();
+    alert(JSON.stringify(a));
+    alert(JSON.stringify(b));
+
+    alert(JSON.stringify(d));
+    alert(JSON.stringify(e));
+    alert(JSON.stringify(f));
 </script>
 </body>
 </html>
