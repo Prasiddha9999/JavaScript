@@ -8,7 +8,7 @@
 <body>
     <h3> Creating Java Scrip Object</h3>
     <h1><p id ="demo"></p></h1>
-<script>
+<!-- <script>
         var student = {
             name: "prasiddha",
             age: 21,
@@ -16,7 +16,7 @@
         };
         a = "age";
         document.getElementById("demo").innerHTML = student.name + " " + student[a] + " "+ student.studies;
-    </script>
+    </script> -->
     <!-- <script>
         var std = new Object();
         std.name = "Prasiddha",
@@ -24,17 +24,15 @@
         std.studies = "Computer Sciences";
         document.getElementById("demo").innerHTML = std.name + " " + std.age + " "+ std.studies; 
     </script>  -->
-    <!-- <script>
+    <script>
         function stud(name, age, studies){
             this.name = name;
             this.age= age;
             this.studies = studies;
         }
-        var student = stud("Prasiddha", 21, "Social");
+        var student =   new stud("Prasiddha", 21, "Social");
   
-        document.getElementById("demo").innerHTML = student.name + " " + student.age + " "+ student.studies; -->
+        document.getElementById("demo").innerHTML = (`${student.name} is my name. ${student.age} is my age. ${student.studies} is my fav subject.`); 
     </script>
-   
-    
 </body>
 </html>

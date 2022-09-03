@@ -54,7 +54,7 @@ res = myfunction(6)
     document.getElementById("demo").innerHTML = product
 
 </script> -->
-<script>
+<!-- <script>
     function* myfunc(){
         yield 1;
         yield 2;
@@ -76,6 +76,24 @@ res = myfunction(6)
     alert(JSON.stringify(d));
     alert(JSON.stringify(e));
     alert(JSON.stringify(f));
+</script> -->
+
+<script>
+    let car = new Promise(function(resolve, reject){
+        tank = false;
+        if(tank){
+            resolve()
+        }
+        else{
+            reject()
+        }
+    });
+    car.then(function()){
+        document.getElementById("demo").innerHTML = ("The tank is not full")
+    })
+    car.catch(function()){
+        document.getElementById("demo").innerHTML = ("The tank is not full")
+    })
 </script>
 </body>
 </html>
